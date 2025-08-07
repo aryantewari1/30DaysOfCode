@@ -1,0 +1,11 @@
+function promisifiedSetTimeout(timer) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("this is resolved successfully");
+    }, 1000);
+  });
+}
+
+promisifiedSetTimeout(1000).then((d) => {
+  console.log("executed exactly after the setTimeout" + "with the message" + d);
+});
