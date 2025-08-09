@@ -7,5 +7,5 @@ app.get("/home", (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("server is running succesfully");
+  console.log("server is running successfully");
 });
