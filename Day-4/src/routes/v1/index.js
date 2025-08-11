@@ -1,7 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const v1routes = require("./v1");
 
-router.use("/v1", v1routes);
+router.get("/info", (req, res) => {
+  return res.json({
+    success: "okay",
+  });
+});
 
 module.exports = router;
